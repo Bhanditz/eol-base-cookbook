@@ -1,10 +1,10 @@
-name             'eol-base'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
-license          'All rights reserved'
-description      'Installs/Configures eol-base'
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.0'
+name             "eol-base"
+maintainer       "Marine Biological Laboratory"
+maintainer_email "dmozzherin@gmail.com"
+license          "MIT"
+description      "Installs/Configures eol-base"
+long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
+version          "0.1.0"
 
 depends "chef-client", "~>4.2"
 depends "chef_handler", "~>1.1"
@@ -22,6 +22,7 @@ depends "vim", "~>1.1"
 depends "windows", "~>1.34"
 depends "eol-users", "~>0.1"
 depends "eol-sensu-wrapper", "~>0.1.2"
+depends "eol-logrotate-wrapper", "~>0.1.1"
 
 %w(debian ubuntu centos redhat).each do |os|
   supports os
