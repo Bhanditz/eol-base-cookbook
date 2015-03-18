@@ -7,3 +7,6 @@ include_recipe "git"
 include_recipe "vim"
 include_recipe "eol-users"
 include_recipe "sudo"
+include_recipe "eol-docker"
+
+# include_recipe "eol-sensu-wrapper"
