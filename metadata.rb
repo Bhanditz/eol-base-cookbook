@@ -8,7 +8,6 @@ version          "0.1.0"
 
 depends "chef-client", "~>4.2"
 depends "chef_handler", "~>1.1"
-depends "push-jobs", "~>2.2"
 depends "apt", "~>2.6"
 depends "yum-epel", "~>0.5"
 depends "yum", "~>3.4"
